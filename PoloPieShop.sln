@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoloPieShop", "PoloPieShop.csproj", "{04E9672F-26D8-4F8C-9A33-FDCC45853B1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04E9672F-26D8-4F8C-9A33-FDCC45853B1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E9672F-26D8-4F8C-9A33-FDCC45853B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E9672F-26D8-4F8C-9A33-FDCC45853B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E9672F-26D8-4F8C-9A33-FDCC45853B1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC0EA9B7-BC42-478D-9C8C-A5C2AE9FDBC8}
+	EndGlobalSection
+EndGlobal
