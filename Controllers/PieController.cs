@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PoloPieShop.ViewModels;
 
 namespace PoloPieShop.Controllers
 {
@@ -20,7 +21,11 @@ namespace PoloPieShop.Controllers
 
         public ViewResult List()
         {
-            return View(_pieRepository.AllPies);
+            PieListViewModel PieListViewModel = new PieListViewModel();
+            PieListViewModel.Pies = _pieRepository.AllPies;
+            PieListViewModel.CurrentCategory = "吃了會幸福的派";
+
+            return View(PieListViewModel);
         }
     }
 }
