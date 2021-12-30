@@ -1,19 +1,12 @@
-﻿@model PoloPieShop.ViewModels.PieListViewModel
+﻿@model PieListViewModel
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>吃派商店</title>
-</head>
-<body>
-    <h1>@Model.CurrentCategory</h1>
-    @foreach (var pie in Model.Pies)
-    {
-        <div>
-            <h2>@pie.Name</h2>
-            <h3>@pie.Price</h3>
-            <h4>@pie.Category.CategoryName</h4>
-        </div>
-    }
-</body>
-</html>
+
+<h1>@Model.CurrentCategory</h1>
+@foreach (var pie in Model.Pies)
+{
+    <div>
+        <h2>@pie.Name</h2>
+        <h3>@pie.Price.ToString("C")</h3>
+        <h4>@pie.Category.CategoryName</h4>
+    </div>
+}

@@ -4,4 +4,12 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\images\bethanylogo.png" />
+    <None Include="wwwroot\images\carousel1.jpg" />
+    <None Include="wwwroot\images\carousel2.jpg" />
+    <None Include="wwwroot\images\carousel3.jpg" />
+    <None Include="wwwroot\images\pattern.png" />
+  </ItemGroup>
+
 </Project>
