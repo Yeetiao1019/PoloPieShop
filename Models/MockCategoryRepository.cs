@@ -11,7 +11,7 @@ namespace PoloPieShop.Model
         {
             new Category{ CategoryId = 1, CategoryName= "甜派",Description="甜甜的"},
             new Category{ CategoryId = 2, CategoryName= "鹹派",Description="鹹鹹的"},
-            new Category{ CategoryId = 1, CategoryName= "減糖派",Description="不太甜的"}
+            new Category{ CategoryId = 3, CategoryName= "減糖派",Description="不太甜的"}
         };
     }
 }
