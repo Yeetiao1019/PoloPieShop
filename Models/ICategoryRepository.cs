@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PoloPieShop.Model
+namespace PoloPieShop.Models
 {
     public interface ICategoryRepository
     {

@@ -1,4 +1,4 @@
-﻿using PoloPieShop.Model;
+﻿using PoloPieShop.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
