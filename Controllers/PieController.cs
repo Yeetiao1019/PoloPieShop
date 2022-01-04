@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PoloPieShop.Model;
+using PoloPieShop.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,19 +13,28 @@ namespace PoloPieShop.Controllers
         private readonly IPieRepository _pieRepository;
         private readonly ICategoryRepository _categoryRepository;
 
-        public PieController(IPieRepository pieRepository,ICategoryRepository categoryRepository)
+        public PieController(IPieRepository pieRepository, ICategoryRepository categoryRepository)
         {
             _pieRepository = pieRepository;
             _categoryRepository = categoryRepository;
         }
 
-        public ViewResult List()
+        public IActionResult List()
         {
             PieListViewModel PieListViewModel = new PieListViewModel();
             PieListViewModel.Pies = _pieRepository.AllPies;
             PieListViewModel.CurrentCategory = "吃了會幸福的派";
 
             return View(PieListViewModel);
+        }
+
+        public IActionResult Details(int id)
+        {
+            var pie = _pieRepository.GetPieById(id);
+            if (pie == null)
+                return NotFound();
+
+            return View(pie);
         }
     }
 }
