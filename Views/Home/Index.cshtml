@@ -1,0 +1,13 @@
+﻿@model HomeViewModel
+
+<partial name="_Carousel" />
+
+<h2>本周提供的好派！</h2>
+<h4>每周精選，只為了給你好食光。</h4>
+
+<div class="row">
+    @foreach (var pie in Model.PiesOfTheWeek)
+    {
+        <partial name="_PieCard" model="pie"/>
+    }
+</div>
