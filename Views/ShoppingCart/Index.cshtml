@@ -1,0 +1,36 @@
+﻿@model ShoppingCartViewModel
+
+<h2>您的購物車</h2>
+<h4>看看這裡放了多少個好吃的餐點</h4>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>選擇數量</th>
+            <th>名稱</th>
+            <th class="text-right">單價</th>
+            <th class="text-right">總價</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var line in Model.ShoppingCart.ShoppingCartItems)
+        {
+            <tr>
+                <td class="text-center">@line.Amount</td>
+                <td class="text-left">@line.Pie.Name</td>
+                <td class="text-right">@line.Pie.Price.ToString("c")</td>
+                <td class="text-right">
+                    @((line.Amount * line.Pie.Price).ToString("c"))
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" class="text-right">帳單金額總計:</td>
+            <td class="text-right">
+                @Model.ShoppingCartTotal.ToString("c")
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
