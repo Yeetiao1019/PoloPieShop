@@ -23,8 +23,9 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a asp-controller="Home" asp-action="Index">首頁</a></li>
                         @await Component.InvokeAsync("CategoryMenu")
+                        <li><a asp-controller="Contact" asp-action="Index">聯絡我們</a></li>
                         @await Component.InvokeAsync("ShoppingCartSummary")
                     </ul>
                 </div>
