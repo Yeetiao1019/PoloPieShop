@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace PoloPieShop.Models
 {
-    interface IOrderRepository
+    public interface IOrderRepository
     {
         void CreateOrder(Order order);
     }
