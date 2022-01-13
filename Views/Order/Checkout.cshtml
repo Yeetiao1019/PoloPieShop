@@ -2,6 +2,8 @@
 
 <form class="form-horizontal" role="form" asp-action="Checkout" method="post">
     <h4>只剩一步之差！即可完成訂購好吃的派</h4>
+    <span class="text-danger" asp-validation-for="LastName"></span>
+
     <div class="form-group">
         <label asp-for="LastName" class="col-md-2 control-label"></label>
         <div class="col-md-5">
